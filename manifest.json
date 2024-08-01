@@ -7,18 +7,24 @@
       "service_worker": "background.js"
     },
     "permissions": [
-      "webRequest",
-      "webRequestBlocking",
-      "declarativeNetRequest",
-      "tabs",
-      "storage"
-    ],
-    "host_permissions": [
-      "*://*.instagram.com/*",
-      "*://*.youtube.com/*"
-    ],
-    "action": {
-      "default_popup": "popup.html"
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess",
+        "storage"
+      ],
+      "host_permissions": [
+        "*://*.instagram.com/*",
+        "*://*.youtube.com/*"
+      ],
+      "action": {
+        "default_popup": "popup.html"
+      },
+      "declarative_net_request": {
+        "rule_resources": [
+          {
+            "id": "ruleset_1",
+            "enabled": true,
+            "path": "rules.json"
+          }
+        ]
+      }
     }
-  }
-  
