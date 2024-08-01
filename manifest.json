@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "studyBLOCK",
+    "version": "1.0",
+    "description": "lock in",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "declarativeNetRequest",
+      "tabs",
+      "storage"
+    ],
+    "host_permissions": [
+      "*://*.instagram.com/*",
+      "*://*.youtube.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
