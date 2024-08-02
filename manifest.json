@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "studyBLOCK",
   "version": "1.0",
-  "description": "Block non-productive content like Instagram and non-academic YouTube videos.",
+  "description": "block non-productive content",
   "background": {
     "service_worker": "background.js"
   },
