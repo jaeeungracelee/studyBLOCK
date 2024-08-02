@@ -1,1 +1,4 @@
-// didn't work so removed it for now
+chrome.runtime.onInstalled.addListener(() => {
+    console.log('studyBLOCK installed.');
+  });
+  

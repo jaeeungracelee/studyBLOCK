@@ -1,30 +1,30 @@
 {
-    "manifest_version": 3,
-    "name": "studyBLOCK",
-    "version": "1.0",
-    "description": "lock in",
-    "background": {
-      "service_worker": "background.js"
-    },
-    "permissions": [
-        "declarativeNetRequest",
-        "declarativeNetRequestWithHostAccess",
-        "storage"
-      ],
-      "host_permissions": [
-        "*://*.instagram.com/*",
-        "*://*.youtube.com/*"
-      ],
-      "action": {
-        "default_popup": "popup.html"
-      },
-      "declarative_net_request": {
-        "rule_resources": [
-          {
-            "id": "ruleset_1",
-            "enabled": true,
-            "path": "rules.json"
-          }
-        ]
+  "manifest_version": 3,
+  "name": "studyBLOCK",
+  "version": "1.0",
+  "description": "Block non-productive content like Instagram and non-academic YouTube videos.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.instagram.com/*",
+    "*://*.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
       }
-    }
+    ]
+  }
+}

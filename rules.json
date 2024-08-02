@@ -30,7 +30,12 @@
       "condition": {
         "urlFilter": "*://www.youtube.com/*",
         "resourceTypes": ["main_frame"],
-        "excludedUrlPatterns": ["*tutorial*", "*lecture*", "*education*", "*course*"]
+        "excludedUrlPatterns": [
+          "*tutorial*",
+          "*lecture*",
+          "*education*",
+          "*course*"
+        ]
       }
     }
   ]
