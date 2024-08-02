@@ -44,13 +44,7 @@ chrome.declarativeNetRequest.updateDynamicRules({
         },
         "condition": {
         "urlFilter": "*://www.youtube.com/*",
-        "resourceTypes": ["main_frame"],
-        "excludedUrlPatterns": [
-            "*tutorial*",
-            "*lecture*",
-            "*education*",
-            "*course*"
-        ]
+        "resourceTypes": ["main_frame"]
         }
     }
     ]
